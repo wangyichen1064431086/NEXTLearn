@@ -1,0 +1,1 @@
+<script>/** 如果你在弹出窗口中看到此信息，说明你已经登陆超时，请保持本窗口，再开一个浏览器新窗口登陆cms,再返回本窗口继续保存! **/if(self != 'top' && parent.document.body != null) { 	parent.document.location.href='/falcon.php/cmsusers/login'; } else { 	window.location.href='/falcon.php/cmsusers/login';}</script>

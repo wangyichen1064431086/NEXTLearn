@@ -1,0 +1,25 @@
+{
+  "name": "nextlearn",
+  "description": "my learning of NEXT",
+  "main": "gulpfile.js",
+  "authors": [
+    "wangyichen"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "o-grid": "^4.2.1",
+    "jquery": "^3.1.0",
+    "dom-delegate": "^2.0.3",
+    "modernizr": "^3.3.1",
+    "ftc-icons": "^2.0.2",
+    "animate.css": "^3.5.2"
+  }
+}

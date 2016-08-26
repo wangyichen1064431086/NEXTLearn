@@ -1,0 +1,24 @@
+.pagination-container {
+	@include headerContainer;
+	background-color: transparent;
+	color: $darkGrey;
+}
+.pagination-inner {
+	@include headerInner;
+	height: $mastheadHeight;
+	line-height: $mastheadHeight;
+	margin-bottom: $defaultPadding;
+	span, a {
+		padding-right: $defaultPadding;
+		font-weight: bold;
+	}
+	a {
+		color: $darkGreen;
+		&:hover, &:active {
+			color: $darkGrey;
+		}
+	}
+}
+@media only screen and (max-width: 490px) {
+	@include paginationPhone;
+}

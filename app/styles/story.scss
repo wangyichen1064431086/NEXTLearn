@@ -1,0 +1,261 @@
+@include narrowSide;
+.has-side .content-inner {
+	border-color: transparent;
+}
+.side-container {
+	background-color: transparent;
+}
+.story-page .mpu-container.first-child {
+	padding-top: 0;
+}
+.ce .story-body {
+	p {
+		text-indent: 0;
+		&:first-child {
+			&:first-letter {
+				display: inline;
+			    float: none;
+			    margin: 0;
+			    font-size: 1em;
+			    line-height: 100%;
+			    font-weight: normal;
+			}
+		}
+
+	}
+}
+
+.story-box {
+	border: 1px solid $borderColor;
+	margin-bottom: $defaultPadding;
+}
+.box-title {
+	margin: -10px 0 $defaultPadding/2 $defaultPadding/3;
+	font-size: 16px;
+//	font-weight: normal;
+	a {
+		background-color: $defaultPink;
+		padding: 0 $defaultPadding/3;
+	}
+}
+
+#story_main_mpu {
+	width: 100%;
+	padding: $defaultPadding 0;
+	margin-bottom: $defaultPadding;
+	//background-color: $bannerBG;
+	border-width: 1px 0;
+	border-color: $borderColor;
+	border-style: solid;
+	clear: both;
+	iframe {
+		margin: auto;
+		display: block;
+	}
+	div {
+		text-align: center;
+	}
+}
+.pagination-inner {
+	text-align: right;
+	//height: $mastheadHeight;
+	line-height: $mastheadHeight;
+	padding-bottom: $defaultPadding/2;
+	span, a {
+		padding-left: $defaultPadding;
+		font-weight: bold;
+	}
+	a {
+		color: $darkGreen;
+		&:hover, &:active {
+			color: black;
+		}
+	}
+}
+.pic {
+	text-align:center;
+	color: #d66d06;
+	img {
+		display: block;
+		margin: auto;
+	}
+}
+
+.rightPic{
+	margin:10px 0 0 6px;
+	float:right;
+}
+.leftPic{
+	margin:3px $defaultPadding/2 0 0;
+	float:left;
+}
+.leftPic,.rightPic {
+	font-size:12px;
+	color:#d66d06;
+	width:300px;
+	img{
+		display:block;
+		width:300px;
+		margin:0 auto 10px auto;
+	}
+}
+.left-pic-small {
+	margin:3px $defaultPadding/2 0 0;
+	float:left;
+	font-size:12px;
+	color:#d66d06;
+	width: 100px;
+	&.image {
+		position: static;
+	}
+	img{
+		width: 100px;
+	}
+}
+.leftp, .rightp {
+	width: 48%;
+}
+.leftp {
+	float: left;
+	font-family: Georgia,serif;
+}
+.rightp {
+	float: right;
+}
+.en {
+	font-family: Georgia,serif;
+}
+#story-recommend-container {
+	display: none;
+}
+
+//responsive videos
+.o-responsive-video-container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto 14px auto;
+	zoom: 1;
+	overflow: hidden;
+	position: relative;
+	background-color:#000;
+}
+.o-responsive-video-wrapper-outer {
+	position: relative;
+	padding-top: 56.25%;
+	height: 0;
+}
+.o-responsive-video-wrapper-inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.o-responsive-video-caption {
+	display:block;
+	background-color:#000;
+	color:#FFF;
+	font-size:14px;
+	line-height: 30px;
+	padding-left: 14px;
+}
+a.o-responsive-video-caption:link, a.o-responsive-video-caption:visited, a.o-responsive-video-caption:active, a.o-responsive-video-caption:hover {
+	color: #FFF;
+}
+
+
+// caption {
+// display: table-caption;
+// text-align: -webkit-center;
+// }
+
+// table {
+// display: table;
+// border-collapse: separate;
+// border-spacing: 2px;
+// border-color: gray;
+// }
+// tr {
+// display: table-row;
+// vertical-align: inherit;
+// border-color: inherit;
+// }
+// td, th {
+// display: table-cell;
+// vertical-align: inherit;
+// }
+// thead {
+// display: table-header-group;
+// vertical-align: middle;
+// border-color: inherit;
+// }
+// .data-table {
+// border-spacing: 0;
+// }
+// .data-table caption {
+// font-weight: 500;
+// text-transform: uppercase;
+// }
+// .data-table caption, .data-table thead {
+// text-align: left;
+// }
+// .data-table tbody:before, .data-table thead:before {
+// content: "";
+// display: block;
+// height: 10px;
+// }
+// .data-table td {
+// padding: 5px 10px;
+// }
+// .data-table td, .data-table th {
+// vertical-align: top;
+// font-size: 14px;
+// }
+// .data-table tbody tr:nth-child(2n+1) {
+// background-color: #eae0d7;
+// }
+
+
+@media only screen and (max-width: 490px) {
+    .rightPic,.leftPic{
+    	margin:10px auto;
+    	text-align:center;
+    	font-size:0.9em;
+    	color:#d66d06;
+    	float:none;
+    	width:100%;
+    	img {
+    		width: auto;
+    		display: block;
+    		margin: auto;
+    	}
+    }
+    @include paginationPhone;
+}
+
+@media only screen and (max-width: 690px) {
+	.story-box {
+		border: medium none;
+		font-size: 0.9em;
+	}
+	.box-title {
+	    padding: 7px 14px;
+	    background: #e9decf;
+	    border-style: solid;
+	    border-color: #A7A59B;
+	    border-width: 1px 0;
+	    border-bottom-style: dotted;
+	    clear: both;
+	    display: block;
+	    height: auto;
+	    margin: 0 0 15px 0;
+	    font-weight: normal;
+	    font-size: 1.1em;
+	    clear: both;
+	    position: relative;
+	    a {
+	    	background-color: transparent;
+	    	padding:0;
+	    }
+	}
+}

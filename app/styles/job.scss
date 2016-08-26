@@ -1,0 +1,109 @@
+.row-container {
+	clear: both;
+	margin-bottom: $defaultPadding/2;
+	padding-bottom: $defaultPadding/2;
+	border-bottom: 1px solid $borderColor;
+	>div {
+		float: left;
+		line-height: $goldenRatio;
+	}
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}
+.row-header {
+	margin-top: $defaultPadding;
+	padding-top: $defaultPadding/2;
+	border-top: 4px solid $borderColor;
+	font-weight: bold;
+}
+.row-name {
+	display: none;
+}
+.row-tag {
+	width: 20%;
+	padding-right: $defaultPadding/2;
+	//font-weight: bold;
+}
+.row-title {
+	width: 35%;
+	padding-right: $defaultPadding/2;
+	a {
+		color: $blue;
+		//font-weight: bold;
+	}
+}
+.row-support {
+	width: 15%;
+	padding-right: $defaultPadding/2;
+	color: $lightGrey;
+}
+.row-time {
+	width: 15%;
+	text-align: right;
+	color: $lightGrey;
+	//color: $timeGrey;
+	.row-content {
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 981px), only screen and (max-width: 690px) and (min-width: 491px) {
+.row-container {
+	>div {
+		font-size: 14px;
+	}
+}
+}
+
+@media only screen and (max-width: 980px) and (min-width: 691px), only screen and (max-width: 490px) {
+	.row-header {
+		border-bottom: 0;
+		margin-bottom: 0;
+		border:0;
+		padding: 0;
+		div {
+			display: none;
+		}
+		
+	}
+	.row-container {
+		>div {
+			float: none;
+			&:after {
+				display: block;
+				content: '';
+				clear: both;
+			}
+		}
+	}
+	.row-tag, .row-title, .row-support, .row-time {
+		width: 100%;
+		text-align: left;
+	}
+	.row-name {
+		display: block;
+		float: left;
+		width: 30%;
+		line-height: $goldenRatio;
+		&:after {
+			content: '：';
+
+		}
+		//min-width: 120px;
+	}
+	.row-content {
+		width: 70%;
+		float: left;
+		line-height: $goldenRatio;
+	}
+	.row-time {
+		.row-content {
+			text-align: left;
+		}
+	}
+	//@include filterPhone;
+}
+

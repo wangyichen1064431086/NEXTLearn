@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="no-js core" data-next-app="front-page">
+ <head>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <title>视频页</title>
+ <meta http-equiv="Content-Language" content="zh-CN"/>
+ <meta content="<%$p.meta.description%>" name="description"/>
+ <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ <link rel="apple-touch-icon-precomposed" href="http://static.ftchinese.com/img/ipad_icon.png" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="preconnect" href="http://static.ftchinese.com" />
+ <link rel="preconnect" href="http://i.ftimg.net" />
+ <script>
+ window.errorBuffer = window.errorBuffer || [];
+ function beaconCssError(e) {
+ window.errorBuffer.push({
+ error: e ? e : new Error('CSS failed to load.'),
+ context: {
+ isMobileNetork: document.cookie.replace(/(?:(?:^|.*;\s*)h2_isMobile\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '' ? false : true
+ }
+ });
+ }
+ </script>
+
+<script>
+window.cutsTheMustard = (typeof Function.prototype.bind !== 'undefined');
+if (window.cutsTheMustard) {
+document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js').replace(/\bcore\b/, 'enhanced');
+}
+</script>
+
+<!--[if lte IE 8]>
+    <script>
+        document.documentElement.className += ' is-ie-8';
+        document.createElement('figure');
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+<![endif]-->
+
+<!-- build:css styles/main-video.css -->
+<link rel="stylesheet" href="styles/main-video.css">
+<!-- endbuild -->
+
+
+<!-- build:css styles/main-video-channel.css -->
+<link rel="stylesheet" href="styles/main-video-channel.css">
+<!-- endbuild -->
+
+<link rel="stylesheet" href="styles/main-ie-XL.css">
+
+
+<script type="text/javascript">
+if(typeof startTime === "undefined"){
+var startTime=new Date().getTime();
+}
+var adchID = '1100';
+var dolRand = Math.round(Math.random()*1000000000);//定义slot随机数实现联动互斥功能
+</script>
+
+
+<script type="text/javascript" src="scripts/key.js"></script>
+<script type="text/javascript" src="scripts/ad.js"></script>
+
+
+
+ <link rel="icon" type="image/png" href="https://next-geebee.ft.com/assets/brand-alpha/icons/favicon-32x32.png" sizes="32x32">
+ <link rel="icon" type="image/png" href="https://next-geebee.ft.com/assets/brand-alpha/icons/favicon-194x194.png" sizes="194x194">
+ <link rel="apple-touch-icon" sizes="180x180" href="https://next-geebee.ft.com/assets/brand-alpha/icons/apple-touch-icon-180x180.png" />
+ <meta name="msapplication-TileColor" content="#fff1e0" />
+ <meta name="msapplication-TileImage" content="https://next-geebee.ft.com/assets/brand-alpha/icons/mstile-144x144.png" />
+ <script>
+ window.cutsTheMustard = (typeof Function.prototype.bind !== 'undefined');
+ if (window.cutsTheMustard) {
+ document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js').replace(/\bcore\b/, 'enhanced');
+ }
+ </script>
+ 
+ <!--[if lte IE 8]>
+ <link rel="stylesheet" href="https://next-geebee.ft.com/hashed-assets/front-page/35cf21f8/ie8.css" />
+ <![endif]-->
+ <script>var startTime = new Date().getTime();</script>
+ <script>
+ if ( screen.width<=480) {
+ document.write('<meta content="FT中文网" name="application-name" /><meta content="app-id=443870811" name="apple-itunes-app" />');
+ } else {
+ document.write('<meta content="FT中文网" name="application-name" /><meta content="app-id=396124008" name="apple-itunes-app" />');
+ }
+ </script>
+ <link rel="alternate" type="application/rss+xml" title="FT中文网 - 每日更新" href="/rss/feed" />
+ <link rel="alternate" type="application/rss+xml" title="FT中文网 - 双语阅读" href="/rss/diglossia" />
+ <link rel="alternate" type="application/rss+xml" title="FT中文网 - 今日焦点" href="/rss/news" />
+ <link rel="alternate" type="application/rss+xml" title="FT中文网 - 生活时尚" href="/rss/lifestyle" />
+ <link rel="alternate" type="application/rss+xml" title="FT中文网 - 一周十大热门文章" href="/rss/hotstoryby7day" />
+ <link rel="alternate" type="application/rss+xml" title="FT中文网 - 热门用户评论" href="/rss/hotusercomment" />
+ <link rel="search" type="application/opensearchdescription+xml" title="FT中文网财经搜索" href="/opensearch.xml">
+
+ </head>
+ <body>
+
+
+
+
+
+<header class="header-container">
+<div class="header-inner">
+<div class="masthead"></div>
+<div class="header-side header-left expandable">
+<div class="current-edition">
+<span>简体中文</span>
+<a href="http://big5.ftchinese.com/">繁体中文</a>
+<a href="http://www.ft.com/">英文</a>
+</div>
+</div>
+<div class="header-side header-right">
+<span class="visitor-box">
+<a onclick="showOverlay('overlay-login')">登录</a>
+<a class="more last" href="http://user.ftchinese.com/register">免费注册</a>
+</span>
+<span class="member-box">
+<a href="/users/mystories">我的FT</a>
+<a id="ft-login-your-account" href="/users/cp">设置</a>
+<a id="ft-login-logout" href="http://user.ftchinese.com/logout">登出</a>
+</span>
+</div>
+</div>
+</header>
+<div class="overlay-container" id="overlay-login">
+<div class="overlay-inner">
+<div class="overlay-bg" data-parentid="overlay-login"></div>
+<div class="overlay-content-outer">
+<div class="overlay-content-inner">
+<div class="overlay-content">
+<div class="overlay-title">登录<i class="overlay-close" data-parentid="overlay-login">×</i></div>
+<form method="post" action="/users/login">
+<div class="input-title" id="login-reason"></div>
+<div class="input-title">电子邮件/用户名</div>
+<div class="input-container"><input type="text" class="input-oneline" name="username" id="ft-login-input-username"></div>
+<div class="input-title">密码</div>
+<div class="input-container"><input type="password" class="input-oneline" name="password"></div>
+<div class="input-title input-submit-container"><input type="checkbox" class="checkbox" value="1" checked="checked" name="saveme" id="ft-login-input-remember">记住我
+<input class="input-submit" type="submit" value="提交"></div>
+<div class="input-title"><a href="/users/findpassword" class="blue-link">找回密码</a></div>
+<div class="input-title"><a href="http://user.ftchinese.com/register" class="blue-link">免费注册</a></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div><div class="o-nav__placeholder">
+<div class="o-nav">
+<div class="o-nav__outer">
+<div class="o-nav__inner">
+<form action="/search/" id="search-form" class="o-header__search-form" role="search">
+<button class="search-button" tabindex="1"><span>搜索</span></button> 
+<input id="search-term" type="search" name="keys" class="search-input" placeholder="搜索FT中文网" />
+<input id="type_news" type="hidden" value="type_news" name="ftsearchType" checked />
+</form>
+<div class="o-header__masthead-mobile">
+<a href="/" title="前往FT中文网首页"><span>FT中文网</span></a>
+</div>
+<nav class="o-nav__container" role="navigation">
+<button class="nav-toggle" data-o-nav-togglable><span>Menu</span></button>
+<ol class="o-nav__meganav">
+<li class="nav-section mobile">
+<button class="nav-section-head mobile" aria-selected="true">切换版本</button>
+<ol class="nav-items">
+<li class="nav-item">
+<a class="nav-link" href="http://big5.ftchinese.com/">繁体中文版</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://www.ft.com/">英文版</a>
+</li>
+</ol>
+</li>
+<li class="nav-section"
+ data-section="home">
+<button class="nav-section-head mobile">首页</button>
+<a class="nav-section-head desktop" href="/">首页</a>
+</li>
+<li class="nav-section"
+ data-section="china">
+<button class="nav-section-head mobile">中国</button>
+<a class="nav-section-head desktop" href="/channel/china.html">中国</a>
+</li>
+<li class="nav-section"
+ data-section="world">
+<button class="nav-section-head mobile">全球</button>
+<a class="nav-section-head desktop" href="/channel/world.html">全球</a>
+</li>
+<li class="nav-section"
+ data-section="economy">
+<button class="nav-section-head mobile">经济</button>
+<a class="nav-section-head desktop" href="/channel/economy.html">经济</a>
+</li>
+<li class="nav-section"
+ data-section="markets">
+<button class="nav-section-head mobile">金融市场</button>
+<a class="nav-section-head desktop" href="/channel/markets.html">金融市场</a>
+</li>
+<li class="nav-section"
+ data-section="business">
+<button class="nav-section-head mobile">商业</button>
+<a class="nav-section-head desktop" href="/channel/business.html">商业</a>
+</li>
+<li class="nav-section"
+ data-section="innovation">
+<button class="nav-section-head mobile">创新经济</button>
+<a class="nav-section-head desktop" href="/channel/innovation.html">创新经济</a>
+</li>
+<li class="nav-section"
+ data-section="opinion">
+<button class="nav-section-head mobile">观点</button>
+<a class="nav-section-head desktop" href="/channel/opinion.html">观点</a>
+</li>
+<li class="nav-section"
+ data-section="management">
+<button class="nav-section-head mobile">管理</button>
+<a class="nav-section-head desktop" href="/channel/management.html">管理</a>
+</li>
+<li class="nav-section"
+ data-section="lifestyle">
+<button class="nav-section-head mobile">生活时尚</button>
+<a class="nav-section-head desktop" href="/channel/lifestyle.html">生活时尚</a>
+</li>
+<li class="nav-section"
+ aria-selected="true" data-section="stream">
+<button class="nav-section-head mobile">视频</button>
+<a class="nav-section-head desktop" href="/channel/stream.html">视频</a>
+<ol class="nav-items">
+<li class="nav-item mobile">
+<a class="nav-link" href="/channel/stream.html">
+频道首页
+</a>
+</li>
+<li class="nav-item"  data-channel="vpolitics">
+<a class="nav-link" href="/channel/vpolitics.html">政经</a>
+</li>
+<li class="nav-item"  data-channel="vbusiness">
+<a class="nav-link" href="/channel/vbusiness.html">产经</a>
+</li>
+<li class="nav-item"  data-channel="vfinance">
+<a class="nav-link" href="/channel/vfinance.html">金融</a>
+</li>
+<li class="nav-item"  data-channel="vculture">
+<a class="nav-link" href="/channel/vculture.html">文化</a>
+</li>
+<li class="nav-item"  data-channel="videotinted">
+<a class="nav-link" href="/channel/videotinted.html">有色眼镜</a>
+</li>
+<li class="nav-item"  data-channel="explainer">
+<a class="nav-link" href="/channel/explainer.html">秒懂</a>
+</li>
+<li class="nav-item"  data-channel="viewtop">
+<a class="nav-link" href="/channel/viewtop.html">高端视点</a>
+</li>
+</ol>
+</li>
+<li class="nav-section"
+ data-section="english">
+<button class="nav-section-head mobile">每日英语</button>
+<a class="nav-section-head desktop" href="/channel/english.html">每日英语</a>
+</li>
+<li class="nav-section mobile login">
+<ul>
+<li class="nav-item">
+<a class="nav-link" href="http://user.ftchinese.com/login">登陆</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://user.ftchinese.com/register">注册</a>
+</li>    
+</ul>
+</li>
+<li class="nav-section mobile logout">
+<ul>
+<li class="nav-item">
+<a class="nav-link" href="http://user.ftchinese.com/logout">退出</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/users/setting/index">账户设置</a>
+</li>    
+</ul>
+</li>
+</ol>
+</nav>
+<ul class="o-nav__extra-tools">
+<li class="tools-section" aria-haspopup="true">
+<a class="tools-section-head" href="http://www.ftchinese.com/m/corp/follow.html">关注我们</a>
+<ol class="tools-items">
+<li><a href="http://www.ftchinese.com/m/corp/follow.html" target="_blank">微信公众号</a></li>
+<li><a href="http://weibo.com/ftchinese" target="_blank">新浪微博</a></li>
+<li><a href="http://user.qzone.qq.com/622006290" target="_blank">QQ空间</a></li>
+<li><a href="http://www.ftchinese.com/m/corp/follow.html" target="_blank">读读日报</a></li>
+<li><a href="http://www.ftchinese.com/m/corp/follow.html" target="_blank">Flipboard</a></li>
+<li><a href="https://twitter.com/FTChinese" target="_blank">Twitter</a></li>
+<li><a href="https://www.facebook.com/financialtimeschinese" target="_blank">Facebook</a></li>
+<li><a href="https://www.linkedin.com/company/4865254?trk=hp-feed-company-name" target="_blank">LinkedIn</a></li>
+</ol>
+</li>
+<li class="tools-section" aria-haspopup="true">
+<span class="tools-section-head">工具</span>
+<ol class="tools-items">
+<li><a href="http://app.ftchinese.com/">移动应用大全</a></li>
+<li><a href="/users/setting/index">基本设置</a></li>
+<li><a href="/users/setting/changeicon">修改头像</a></li>
+<li><a href="/users/setting/maillist">邮件订阅</a></li>
+<li><a href="/index.php/snsapi/index">同步微博</a></li>
+<li><a href="/users/commentstory">我的评论</a></li>
+<li><a href="/users/favstorylist">管理收藏</a></li>
+</ol>
+</li>
+<li class="tools-section">
+<a class="tools-section-head follow__rss" href="http://www.ftchinese.com/channel/rss.html" title="RSS"><span>RSS</span></a>
+</li>
+</ul>
+</div><!-- o-nav__inner -->
+</div><!-- o-nav__outer -->    
+</div><!-- o-nav -->  
+</div><!-- o-nav__placeholder -->
+<div class="site-map">
+<div class="site-map__container">
+<ul class="site-map__items">
+<li><a href="/channel/stream.html">视频</a></li>
+</ul>
+</div>
+</div><div class="banner-placeholder">
+<div class="banner-container">
+<div class="banner-inner">
+<div class="banner-content">
+<script type="text/javascript">document.write (writeAd('banner'));</script>
+</div>
+</div>
+</div>
+</div>
+<div class="block-container has-side"><div class="block-inner">
+<div class="content-container"><div class="content-inner">
+<div class="list-container">
+<div class="list-inner">
+<div class="items">
+<div class="item-container XL12 L12 M12 S12 P12 video-story">
+<div class="item-inner">
+<h1 class="story-headline">发现全新的FT中文网</h1>
+<div class="video-player" target="_blank" id="video-player"><div class="video-player-inner">
+<script type="text/javascript">
+var thisVideo = document.getElementById('video-player');
+var video_width = thisVideo.offsetWidth;
+var video_height = Math.round(video_width*9/16);
+document.write('<scr' + 'ipt src="http://union.bokecc.com/player?vid=75289EAECD6A5B9F9C33DC5901307461&siteid=922662811F1A49E9&autoStart=true&width=' + video_width + '&height=' + video_height + '&playerid=3571A3BF2AEC8829&playertype=1" type="text/javascript"></sc' + 'ript>');
+</script>
+</div></div>
+<div class="story-action-placeholder" id="story-action-placeholder">
+<div class="story-action">
+<div class="action-inner">
+<a class="action-icon icon-wechat" href="/m/corp/qrshare.html?url=http%3A%2F%2Fwww.ftchinese.com%2Finteractive%2F7083&title=发现全新的FT中文网 - FT中文网" target="_blank"></a>
+<a class="action-icon icon-weibo" href="http://service.weibo.com/share/share.php?appkey=4221537403&url=http%3A%2F%2Fwww.ftchinese.com%2Finteractive%2F7083?ccode=2G169001&title=【发现全新的FT中文网】2016年6月15日，FT中文网全新改版。推出的新内容、新功能、新设计，以及更完善的网站性能，为桌面和移动端读者提供无与伦比的数字新闻体验。全新的FT中文网，等你发现。（分享自 @FT中文网）&ralateUid=1698233740&source=&sourceUrl=&content=utf-8&pic=" target="_blank"></a>
+<a class="action-icon icon-linkedin" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwww.ftchinese.com%2Finteractive%2F7083%3Fccode%3D2G169003&original_referer=https%3A%2F%2Fdeveloper.linkedin.com%2Fsites%2Fall%2Fthemes%2Fdlc%2Fsandbox.php%3F&token=&isFramed=true&lang=zh_CN&_ts=1422502780259.2795" target="_blank"></a>
+<a class="action-icon icon-twitter" href="http://twitter.com/home?status=【发现全新的FT中文网】2016年6月15日，FT中文网全新改版。推出的新内容、新功能、新设计，以及更完善的网站性能，为桌面和移动端读者提供无与伦比的数字新闻体验。全新的FT中文网，等你发现。（分享自 @FT中文网）...%20http%3A%2F%2Fwww.ftchinese.com%2Finteractive%2F7083" target="_blank"></a>
+<a class="action-icon icon-facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ftchinese.com%2Finteractive%2F7083&t=【发现全新的FT中文网】2016年6月15日，FT中文网全新改版。推出的新内容、新功能、新设计，以及更完善的网站性能，为桌面和移动端读者提供无与伦比的数字新闻体验。全新的FT中文网，等你发现。（分享自 @FT中文网）" target="_blank"></a>
+<a class="icon-right icon-action icon-share" onclick="showOverlay('share-legacy')"></a>
+</div>
+</div>
+</div>
+<div class="story-byline">
+<span class="story-time">2016年06月08日</span>
+<span class="story-author">
+ <a href="/search/?keys=0&type=relative_byline&category=video">0</a> 
+</span>
+</div>
+<div class="story-lead">新版FT中文网推出新内容、新功能、新设计，以及更完善的网站性能，为桌面和移动端读者提供无与伦比的数字新闻体验。2016年6月15日，FT中文网全新改版，给您全新的阅读体验。</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="list-container"><div class="list-inner">
+<div class="items">
+<div class="clearfloat"></div>
+</div>
+</div></div>
+<div class="clearfloat block-bottom"></div><div class="list-container">
+<div class="list-inner">
+<h2 class="list-title"><a class="list-link" href="#">版权声明</a></h2>
+<div class="items">
+<div class="item-container no-image">
+<div class="item-inner">
+<div class="item-lead">
+<p>未经英国《金融时报》书面许可，对于英国《金融时报》拥有版权和/或其他知识产权的任何内容，任何人不得复制、转载、摘编或在非FT中文网（或：英国《金融时报》中文网）所属的服务器上做镜像或以其他任何方式进行使用。已经英国《金融时报》授权使用作品的，应在授权范围内使用。</p>
+<p>本网络视频的使用必须遵循英国《金融时报》网站(www.FT.com)的条款，我们建议您阅读条款的全部内容。您所接受的服务仅限于个人和非商业的用途。英国《金融时报》不承诺此项服务是无误差或是连续的，同时也不给予您在任何使用（权利）方面的承诺。网络视频中非英国《金融时报》人员所陈述的观点仅代表他们本人而非英国《金融时报》的观点立场，英国《金融时报》不承担由他们所表达之观点产生的任何责任。观看需Adobe Flash Player 8.0或以上版本的视频播放器。请查看与英国《金融时报》网站兼容的<a href="http://www.ft.com/servicestools/help/terms/browsers" target=_blank>浏览器清单</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfloat block-bottom"></div>
+</div></div>
+<div class="side-container"><div class="side-inner">
+<div class="mpu-container first-child">
+<script type="text/javascript">document.write (writeAd('mpu'));</script>
+</div>
+</div></div>
+<div class="clearfloat"></div>
+</div></div><div class="footer-container"><div class="footer-inner">
+<div>
+<a href="/m/corp/aboutus.html">关于我们</a>
+<a href="/jobs/?from=ft">加入我们</a>
+<a href="/m/corp/faq.html">问题回馈</a>
+<a href="/m/corp/contact.html">联系方式</a>
+<a href="/m/corp/partner.html">合作伙伴</a>
+<a href="/m/corp/service.html">服务条款</a>
+<a href="/m/corp/sales.html">广告业务 </a>
+<a href="/m/corp/copyright.html">版权声明</a>
+<a href="/m/marketing/ftc.html">最新动态</a>
+</div>
+<p>
+<span class="copyright"><b>© The Financial Times Ltd 2016</b></span> 
+<span><acronym title="Financial Times">FT</acronym> and 'Financial Times' are trademarks of The Financial Times Ltd.</span>
+</p>
+</div></div><div class="app-download-container">
+<a href="http://app.ftchinese.com/download.html?utm_source=marketing&utm_medium=campaign&utm_campaign=QRCODE02" target="_blank">
+<div>FT中文网客户端</div>
+<figure class="loading" data-url="http://s.ftimg.net/img/qr/qr90-2.png"></figure>
+<div>点击或扫描下载</div>
+</a>
+</div>
+<div class="app-download-container wechat">
+<a href="#" target="_blank">
+<div>FT中文网微信</div>
+<figure class="loading" data-url="http://i.ftimg.net/picture/6/000060716_piclink.jpg"></figure>
+<div>扫描关注</div>
+</a>
+</div><div class="overlay-container" id="share-legacy">
+<div class="overlay-inner">
+<div class="overlay-bg" data-parentid="share-legacy"></div>
+<div class="overlay-content-outer">
+<div class="overlay-content-inner">
+<div class="overlay-content">
+<div class="overlay-title">分享<i class="overlay-close" data-parentid="share-legacy">×</i></div>
+<span id="sharelinks"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+            
+
+
+ </body>
+
+<!--[if lte IE 8]>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<![endif]-->
+
+<!-- build:js scripts/main-video.js -->
+<script type="text/javascript" src="scripts/dom-delegate.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/o-nav.js"></script>
+<script type="text/javascript" src="scripts/video.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript" src="scripts/sharelinks.js"></script>
+
+</html>
+
